@@ -12,4 +12,5 @@ outputs: [HTML, RSS, print, markdown, LLMSFULL]
 Field manuals are chronological: each one walks the field-work timeline from setup through operations to the things that broke. The selector at the top of every manual (RHAIE version, ops mode) filters every manual and persists across pages and visits.
 
 - [Hello World Field Manual](hello-world/)
+- [RHOAI Install Field Manual](rhoai-install/)
 {.cards}
