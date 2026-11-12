@@ -1,15 +1,15 @@
 ---
 title: Conventions and intent
-description: The six conventions every field manual follows, why each exists, and what the reader loses without it.
+description: The six conventions every field manual follows: why each exists, and what the reader loses without it.
 icon: fa-solid fa-compass
 weight: 10
 ---
 
-Field manuals here are written against six conventions. Each one below states why it exists, what a reader loses when a manual skips it, and the rule itself. The [Hello World manual]({{< relref "/field-manual/hello-world" >}}) is the working exemplar; every rule on this page is something it does.
+Field manuals here are written against six conventions. Each one below states why it exists, what a reader loses when a manual skips it, and the rule itself. The [Hello World manual]({{< relref "/field-manual/hello-world" >}}) is the working exemplar. Every rule on this page is something it does.
 
 ## Chronological information architecture
 
-The work happens in a fixed order: set the system up once, operate it day to day, and fix what breaks. A manual organized by order-of-work puts the stage a reader is standing in one click away, and the timeline never goes stale the way an install route does: phases get renumbered by every release, but field work is still set up, operate, breakage. Order it by deployment phases instead and the nav stops matching the reader's moment; a day-two check hides inside whatever phase list came from the installer's point of view.
+The work happens in a fixed order: set the system up once, operate it day to day, and fix what breaks. A manual organized by order-of-work puts the stage a reader is standing in one click away, and the timeline never goes stale the way an install route does. Phases get renumbered by every release, but field work is still set up, operate, breakage. Order it by deployment phases instead and the nav stops matching the reader's moment; a day-two check hides inside whatever phase list came from the installer's point of view.
 
 **Rule: order the manual by the field-work timeline (set up → operate → things that broke).**
 

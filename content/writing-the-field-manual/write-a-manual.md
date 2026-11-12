@@ -1,6 +1,6 @@
 ---
 title: Write your first manual
-description: Duplicate the skeleton, retitle it, write the three timeline pages, and pass the publication gate. Your first field manual, end to end.
+description: Duplicate the skeleton, retitle it, write the three timeline pages, and pass the publication gate: your first field manual, end to end.
 icon: fa-solid fa-list-check
 weight: 30
 ---
@@ -9,8 +9,8 @@ You will take the blank skeleton to a publication-gated field manual: duplicate 
 
 ## Prerequisites
 
-- The definition you are writing against: [What is a Field Manual?]({{< relref "/what-is-a-field-manual" >}}), read it first.
-- Hugo Extended ≥ 0.168, check with:
+- The definition you are writing against: [What is a Field Manual?]({{< relref "/what-is-a-field-manual" >}}). Read it first.
+- Hugo Extended ≥ 0.168. Check with:
 
 ```sh
 hugo version
@@ -18,7 +18,7 @@ hugo version
 
 Expected output: a version line at or above `hugo v0.168.0+extended`.
 
-- Go ≥ 1.27, check with:
+- Go ≥ 1.27. Check with:
 
 ```sh
 go version
@@ -26,7 +26,7 @@ go version
 
 Expected output: a version line at or above `go version go1.27`.
 
-- A clone of this repo, check with:
+- A clone of this repo. Check with:
 
 ```sh
 ls content/field-manual/hello-world/_index.md
@@ -105,7 +105,7 @@ A 404 at the root (`http://localhost:1313/`) is expected: with a path in `baseUR
 hugo --cleanDestinationDir --gc --minify --environment production --printPathWarnings
 ```
 
-Expected output: a build summary ending in a line like `Total in N ms`, with no ERROR lines. The known LibSass WARNING from the pinned theme (v1.4.0) is expected in this direct build output; it is not a failure.
+Expected output: a build summary ending in a line like `Total in N ms`, with no ERROR lines. The known LibSass WARNING from the pinned theme (v1.4.0) is expected in this direct build output. It is not a failure.
 
 6. Run the warning gate, which asserts no WARN lines other than the known LibSass one:
 
