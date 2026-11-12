@@ -9,6 +9,7 @@ You will take the blank skeleton to a publication-gated field manual: duplicate 
 
 ## Prerequisites
 
+- The definition you are writing against: [What is a Field Manual?]({{< relref "/what-is-a-field-manual" >}}) — read it first.
 - Hugo Extended ≥ 0.168 — check with:
 
 ```sh

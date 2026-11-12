@@ -15,6 +15,10 @@ cards:
   title: What lives here
   columns: 2
   items:
+    - title: What is a Field Manual?
+      desc: "The desert-island definition — what a CAI Field Manual is, what it is not, and where it came from."
+      icon: fa-solid fa-book-open
+      url: what-is-a-field-manual/
     - title: Field Manual
       desc: Chronological manuals — set up, operate, the things that broke — filtered by the selector (RHAIE version, ops mode) at the top of every manual.
       icon: fa-solid fa-map

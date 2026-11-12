@@ -39,7 +39,7 @@ No two readers share a cluster name, a username, or a project. Customize tokens 
 
 ## Dual consumption
 
-A field manual is read by a human in a browser and consumed by an agent as markdown — same page, both outputs. The HTML filters variants and substitutes tokens interactively; the markdown output carries every variant labeled and every token at its shipped default, so nothing is lost, only flattened. Written for just one consumer, the page serves the other one ambiguity: an unlabeled variant or an unexplained value in the markdown is a sentence the agent cannot act on.
+A field manual is read by a human in a browser and consumed by an agent as markdown — same page, both outputs. The HTML filters variants and substitutes tokens interactively; the markdown output carries every variant labeled and every token at its shipped default, so nothing is lost, only flattened. Written for just one consumer, the page serves the other one ambiguity: an unlabeled variant or an unexplained value in the markdown is a sentence the agent cannot act on. The audience split this convention serves — humans and their AI agents getting different but complementary information — is the definition in [What is a Field Manual?]({{< relref "/what-is-a-field-manual" >}}).
 
 **Rule: write every page so the markdown-only reader gets every variant labeled and every token at its shipped default.**
 
