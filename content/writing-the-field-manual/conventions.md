@@ -1,6 +1,6 @@
 ---
 title: Conventions and intent
-description: The six conventions every field manual follows: why each exists, and what the reader loses without it.
+description: "The six conventions every field manual follows: why each exists, and what the reader loses without it."
 icon: fa-solid fa-compass
 weight: 10
 ---

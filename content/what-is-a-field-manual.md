@@ -1,6 +1,6 @@
 ---
 title: What is a Field Manual?
-description: The one thing you want in your pack when you head into the field: what a CAI Field Manual is, what it is not, and where it came from.
+description: "The one thing you want in your pack when you head into the field: what a CAI Field Manual is, what it is not, and where it came from."
 type: docs
 footer_style: slim
 weight: 10

@@ -1,6 +1,6 @@
 ---
 title: Write your first manual
-description: Duplicate the skeleton, retitle it, write the three timeline pages, and pass the publication gate: your first field manual, end to end.
+description: "Duplicate the skeleton, retitle it, write the three timeline pages, and pass the publication gate: your first field manual, end to end."
 icon: fa-solid fa-list-check
 weight: 30
 ---
