@@ -148,20 +148,24 @@ at the root is expected, not a broken build.
 
 ### Publication gate
 
+One implementation, used locally and by CI (both the deploy build and PR
+checks run it):
+
 ```sh
-hugo --cleanDestinationDir --gc --minify --environment production \
-  --printPathWarnings
+scripts/publication-gate.sh
 ```
 
-Note: `--panicOnWarning` is intentionally omitted — the pinned theme version
+The build must succeed and the only WARN allowed is the known oink libsass
+deprecation; anything else fails with exit 1. Extra arguments are passed
+through to hugo:
+
+```sh
+scripts/publication-gate.sh --baseURL "https://example.invalid/docs/"
+```
+
+Note: `--panicOnWarning` is intentionally not used. The pinned theme version
 (v1.4.0) still transpiles SCSS with Hugo's deprecated LibSass, which emits a
-WARNING on Hugo ≥ 0.153 and would abort the build. Gate on the remaining
-warning surface instead: assert the build emits no WARN lines other than the
-known libsass one.
-
-```sh
-hugo --cleanDestinationDir --gc --minify --environment production \
-  --printPathWarnings 2>&1 | grep -i warn | grep -v "css.Sass: libsass"
-```
-
-No output = clean. Revisit when the theme moves to the Dart Sass transpiler.
+WARNING on Hugo ≥ 0.153 and would abort the build. The script gates on the
+remaining warning surface instead: it asserts the build emits no WARN lines
+other than the known libsass one. Revisit when the theme moves to the Dart
+Sass transpiler.
