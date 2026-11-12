@@ -63,8 +63,7 @@ jobs:
       # Same gate as PRs and the AGENTS.md gate: fail on build errors or any
       # WARN besides the known oink libsass deprecation.
       - name: Publication gate (build Pages artifact)
-        run: scripts/publication-gate.sh \
-          --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: scripts/publication-gate.sh --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
