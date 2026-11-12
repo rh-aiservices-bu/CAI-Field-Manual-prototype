@@ -213,3 +213,37 @@ code.td-customize-token {
     font-weight: 600;
   }
 }
+
+// Landing timeline: the theme stylesheet gives each item a TWO-column grid
+// (6rem | 1fr, oink v1.4.0 assets/scss/td/_landing.scss:1938) but the theme's
+// timeline partial emits THREE children when the item has an icon (<i>,
+// <time>, <div>): <time> lands in column 2 and the desc <div> wraps into an
+// implicit row inside the 6rem column — the "scrunched to the left" render.
+// Fix in the sanctioned project stylesheet, desktop range only (the theme
+// re-collapses to one column under 561px): icon and date share the theme's
+// 6rem column, content starts where the theme's second column starts, so
+// the 7.5rem rail, the dot, and the text alignment keep the theme's geometry.
+@media (min-width: 561px) {
+  .td-landing-timeline li {
+    grid-template-columns: 6rem minmax(0, 1fr);
+  }
+
+  .td-landing-timeline li > i {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .td-landing-timeline li > time {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    padding-inline-start: 1.75rem;
+  }
+
+  .td-landing-timeline li > div {
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
